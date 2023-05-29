@@ -8,3 +8,5 @@ mongoose.connect(process.env.DATABASE, {userNewUrlParser:true});
 mongoose.connection.on('error', (error) => {
     console.log(error);
 })
+// importar los modelos 
+require('../models/Vacantes');
