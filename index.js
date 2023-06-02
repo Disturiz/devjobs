@@ -1,4 +1,5 @@
-const express = require('express');
+//const express = require('express');
+import express from 'express';
 const exphbs = require('express-handlebars');
 const path = require('path');
 const router = require('./routes');
@@ -14,7 +15,8 @@ const app = express();
 // habilitar handlebars como view
 app.engine('handlebars',
 exphbs.engine({
-    defaultLayout: 'layout'
+    defaultLayout: 'layout',
+    helpers: require('./helpers/handlebars')
     })
 );
 
