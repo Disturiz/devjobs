@@ -1,5 +1,4 @@
-//const express = require('express');
-import express from 'express';
+const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const router = require('./routes');
